@@ -1,0 +1,56 @@
+header {
+    background: #00FFFF;
+    height: 100px;
+    width: 100%;
+}
+
+main {
+    background: #FE0000;
+    height: 500px;
+    width: 100%;
+}
+
+.left {
+    background-color: #FEA500;
+    width: 200px;
+    border-right: 10px;
+    border-right-color: white;
+    height: 500px;
+    float: left;
+}
+
+.leftBlank {
+    width: 2%;
+    background-color: white;
+    height: 500px;
+    float: left;
+}
+
+.rightBlank {
+    width: 2%;
+    background-color: white;
+    height: 500px;
+    float: right;
+}
+
+.right {
+    background: #81007F;
+    width: 200px;
+    height: 500px;
+    float: right;
+}
+
+.blackCube {
+    position: absolute;
+    background: black;
+    left: 60%;
+    top: 500px;
+    width: 55px;
+    height: 55px;
+}
+
+footer {
+    background: #0000FE;
+    height: 100px;
+    width: 100%;
+}

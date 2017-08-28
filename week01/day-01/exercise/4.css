@@ -1,0 +1,30 @@
+/* <style>
+div{
+    font-family: 'Calibri';
+    font-size: 26px;
+    color: #131508;
+
+}
+h1{
+    color: #F79816;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 26px;
+}
+</style> */
+
+body {
+    margin: 0px;
+}
+
+h1 {
+    color: #F79816;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 26px;
+    margin: 0px;
+    padding: 0px 0px 5px 5px;
+}
+
+pre {
+    font-family: monospace;
+    font-size: 14px;
+}

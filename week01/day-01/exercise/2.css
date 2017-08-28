@@ -1,0 +1,81 @@
+/* <style>
+
+    .outsider{
+        border: 15px solid #4285F4;
+        width: 40%;
+        
+        
+    }
+    .north{
+        color:#FFFFFF;
+        display: block;
+        background: #E67676;
+        font-family: "Arial";
+        font-size: 35px;
+        padding: 45px;
+        text-align: center;
+    }
+    .east{
+        color:#FFFFFF;
+        display: block;
+        background: #F2F062;
+        font-family: "Arial";
+        font-size: 35px;
+        padding: 45px;
+        text-align: center;
+    }
+    .south{
+        color:#FFFFFF;
+        display: block;
+        background: #A9E6E6;
+        font-family: "Arial";
+        font-size: 35px;
+        padding: 45px;
+        text-align: center;
+    }
+    .west{ color:#FFFFFF;
+        display: block;
+        background: #7692E4;
+        font-family: "Arial";
+        font-size: 35px;
+        padding: 45px;
+        text-align: center;
+
+    }
+</style> */
+
+
+/* revised */
+
+.frame {
+    border: 15px solid #4285F4;
+    width: 40%;
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 35px;
+    font-size: 4vw;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.frame>div {
+    padding: 45px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.north {
+    background: #E67676;
+}
+
+.east {
+    background: #F2F062;
+}
+
+.south {
+    background: #A9E6E6;
+}
+
+.west {
+    background: #7692E4;
+}

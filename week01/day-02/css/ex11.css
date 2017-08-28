@@ -1,0 +1,31 @@
+ .container {
+     width: 600px;
+     height: 200px;
+ }
+ 
+ .green {
+     width: 200px;
+     background-color: #51D400;
+     padding: 0;
+     height: 200px;
+     margin: 0;
+     float: right;
+ }
+ 
+ .yellow {
+     width: 33%;
+     background-color: #FFD62A;
+     padding: 0;
+     height: 200px;
+     margin: 0;
+     float: right;
+ }
+ 
+ .purple {
+     width: 33%;
+     background-color: #B02AFF;
+     padding: 0;
+     height: 200px;
+     margin: 0;
+     float: right;
+ }

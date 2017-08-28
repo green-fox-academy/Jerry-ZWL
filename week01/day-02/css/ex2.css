@@ -1,0 +1,44 @@
+nav {
+    background: #B02AFF;
+    padding: 1px 100px 1px 15px;
+}
+
+ul {
+    padding: 0;
+}
+
+nav ul:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.link1 {
+    list-style-type: none;
+    background: #2AEAFF;
+    float: left;
+    padding: 20px 70px;
+    margin: 0px 15px 0px 0px;
+}
+
+nav li {
+    list-style-type: none;
+    background: #2AEAFF;
+    float: left;
+    padding: 20px 60px;
+    margin: 0px 15px 0px 0px;
+}
+
+main {
+    background: #FFD62A;
+    height: 600px;
+    width: 100%;
+}
+
+aside {
+    background-color: #51D400;
+    height: 600px;
+    float: right;
+    position: relative;
+    width: 35%;
+}

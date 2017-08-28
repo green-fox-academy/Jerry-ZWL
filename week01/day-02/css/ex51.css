@@ -1,0 +1,24 @@
+div>div {
+    height: 50px;
+    width: 60%;
+}
+
+div>div {
+    height: 50px;
+    background: #333333;
+}
+
+div>div:nth-child(2n) {
+    height: 50px;
+    background: #666666;
+}
+
+div>div:nth-child(3n) {
+    height: 50px;
+    background: #666666;
+}
+
+div>div:nth-child(5n) {
+    height: 50px;
+    background: #999999;
+}

@@ -1,0 +1,22 @@
+.container #b325,
+.container .asteriod {
+    border-width: 1px;
+    border-style: solid;
+    border-color: green;
+    width: 20%;
+    font-weight: bold;
+}
+
+p {
+    width: 20%;
+    background: yellow;
+    color: blue;
+}
+
+.b329 {
+    color: blue;
+    font-weight: bold;
+}
+
+
+/* there must be easier way */

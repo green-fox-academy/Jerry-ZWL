@@ -1,0 +1,38 @@
+div {
+    width: 150px;
+    background: #CCCCCC;
+}
+
+p {
+    margin: 10px;
+}
+
+div>div::before {
+    content: attr(data-count) " ";
+    padding: 5px 0px 0px 5px;
+    display: block;
+}
+
+div>div {
+    height: 50px;
+    width: 50px;
+    background: #666666;
+    color: white;
+    float: left;
+}
+
+div>div:nth-child(2n) {
+    background: #999999;
+}
+
+div>div:nth-child(3n) {
+    background: #666666;
+}
+
+div>div:nth-child(4n) {
+    background: #999999;
+}
+
+div>div:nth-child(5n) {
+    background: #666666;
+}

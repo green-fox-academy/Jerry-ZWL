@@ -1,0 +1,30 @@
+/* <style>
+h1 {
+    color: black;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 26px;
+    text-indent: 10px;
+}
+
+.text {
+    border-color: transparent;
+    display: block;
+    border-left: solid black;
+    border-width: 2.5px;
+    margin: 10px;
+    padding-left: 19px;
+}
+
+br {
+    text-indent: 24px;
+}
+</style> */
+
+pre {
+    margin: 0px 0px 10px 0px;
+    border-left: 2px solid black;
+    font-size: 14px;
+    text-align: left;
+    white-space: pre-line;
+    padding-left: 18px;
+}

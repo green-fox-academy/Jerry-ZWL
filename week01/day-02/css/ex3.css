@@ -1,0 +1,175 @@
+nav {
+    background: #B02AFF;
+    padding: 1px 0px 1px 15px;
+    max-width: 80%;
+    min-width: 800px;
+    margin: 0px auto;
+}
+
+ul {
+    padding: 0;
+}
+
+nav ul:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.link1 {
+    list-style-type: none;
+    background: #2AEAFF;
+    float: left;
+    padding: 20px 70px;
+    margin: 0px 15px 0px 0px;
+}
+
+.link1:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.link2 {
+    list-style-type: none;
+    background: #2AEAFF;
+    float: right;
+    padding: 20px 20px;
+    margin: 0px 15px 0px 0px;
+}
+
+nav li {
+    list-style-type: none;
+    background: #2AEAFF;
+    float: left;
+    padding: 20px 60px;
+    margin: 0px 15px 0px 0px;
+}
+
+
+/* margin 100 doesn't work */
+
+main {
+    background: #FFD62A;
+    height: 600px;
+    width: 80%;
+    min-width: 800px;
+    padding: 0px 0px 0px 15px;
+    margin: 0px auto;
+}
+
+aside {
+    background-color: #51D400;
+    height: 600px;
+    float: right;
+    position: relative;
+    width: 250px;
+}
+
+aside:after {
+    content: "";
+    display: block;
+    clear: right;
+}
+
+.bar li {
+    list-style-type: none;
+    background: #9D8419;
+    margin: 15px;
+    padding: 0;
+    height: 40px;
+}
+
+.asidetext1 {
+    width: 160px;
+    word-wrap: break-word;
+    margin: 0px 0px 10px 40px;
+    overflow: hidden;
+    height: 102px;
+}
+
+.asidetext2 {
+    width: 160px;
+    word-wrap: break-word;
+    margin: 0px 0px 10px 40px;
+    overflow: hidden;
+    height: 102px;
+}
+
+p {
+    color: black;
+}
+
+.text1 {
+    width: 45%;
+    float: left;
+    word-wrap: break-word;
+    overflow: hidden;
+}
+
+.text1 :after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.box1 {
+    padding: 0;
+    width: 60%;
+    overflow: hidden;
+}
+
+.box1 :after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.box1 li {
+    list-style-type: none;
+    background: #E90020;
+    float: left;
+    padding: 6%;
+    margin: 10px 10px 10px 10px
+}
+
+.box2 {
+    padding: 0;
+    width: 60%;
+    overflow: hidden;
+}
+
+.box2 :after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.box2 li {
+    list-style-type: none;
+    background: #E90020;
+    float: left;
+    padding: 6%;
+    margin: 10px 10px 10px 10px
+}
+
+.text2 {
+    width: 20%;
+    float: left;
+    word-wrap: break-word;
+    overflow: hidden;
+    margin: 0px 6% 0px 0px;
+}
+
+.text3 {
+    width: 20%;
+    float: left;
+    word-wrap: break-word;
+    overflow: hidden;
+}
+
+.text3 :after {
+    content: "";
+    display: block;
+    clear: both;
+}

@@ -1,0 +1,16 @@
+div>div:nth-child(3n+1) {
+    background: #666;
+}
+
+div>div:nth-child(3n+2) {
+    background: #999;
+}
+
+div>div:nth-child(3n) {
+    background: #CCCCCC;
+}
+
+div>div {
+    height: 50px;
+    width: 60%;
+}
