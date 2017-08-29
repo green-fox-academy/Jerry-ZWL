@@ -1,0 +1,49 @@
+/* <style>
+h1 {
+    font-family: "Times New Roman", Times, serif;
+    font-size: 26px;
+}
+
+div {
+    width: 15%;
+    padding: 3px;
+}
+
+button {
+    border: none;
+    background-color: #E7E7E7;
+    color: black;
+    padding: 2px;
+    width: 70px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #9A9A9A;
+    font-size: 13px;
+}
+</style> */
+
+label,
+input {
+    display: block;
+    margin: 10px 0px 10px;
+}
+
+label[for=terms] {
+    margin: 10px 0px 10px;
+}
+
+input[name=agree] {
+    display: inline;
+}
+
+input[type=submit] {
+    border: none;
+    background-color: #E7E7E7;
+    color: black;
+    padding: 2px;
+    width: 70px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #9A9A9A;
+    font-size: 13px;
+}

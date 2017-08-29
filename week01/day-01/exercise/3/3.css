@@ -1,0 +1,69 @@
+/* <style>
+
+    .outsider{
+        border: 15px solid #4285F4;
+        width: 40%;
+        margin: 5px;
+        
+    }
+    .north{
+        color:#FFFFFF;
+        display: block;
+        background: #E67676;
+        font-family: "Arial";
+        font-size: 35px;
+        padding: 45px;
+        text-align: center;
+    }
+   
+    .south{
+        color:#FFFFFF;
+        display: block;
+        background: #A9E6E6;
+        font-family: "Arial";
+        font-size: 35px;
+        padding: 45px;
+        text-align: center;
+    }
+
+</style> */
+
+
+/* revised version */
+
+body {
+    margin: 0px;
+}
+
+p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 3vw;
+    text-align: center;
+    color: #FFFFFF;
+    margin: 0px;
+    padding: 40px;
+}
+
+.frame {
+    border: 15px solid #4285F4;
+    width: 30%;
+    margin: 0px 0px 5px 0px;
+}
+
+
+/* .frame:first-child */
+
+
+/* if box-sizing needed */
+
+.frame div {
+    box-sizing: border-box;
+}
+
+.north {
+    background: #E67676;
+}
+
+.south {
+    background: #A9E6E6;
+}

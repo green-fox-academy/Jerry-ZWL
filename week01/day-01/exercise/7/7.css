@@ -1,0 +1,23 @@
+div>div {
+    border-width: 1px;
+    border-style: solid;
+    border-color: green;
+    width: 20%;
+}
+
+p {
+    width: 20%;
+    background: yellow;
+    color: blue;
+}
+
+.big {
+    color: blue;
+}
+
+div {
+    font-weight: bold;
+}
+
+
+/* there must be easier way */

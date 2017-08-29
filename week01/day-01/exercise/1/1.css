@@ -1,0 +1,36 @@
+/* previous version 
+<!-- <style>  
+    div {
+        display: block;
+        width: 30%;
+        margin: 20px; 
+        padding: 30px;
+        background:  #0E91A1;
+        border: 5px solid #7DCE94;
+        font-family: "Arial";
+        font-size:  30px;
+        color: #005566; 
+        height: 90px; 
+        padding: 20px;      
+    }
+</style> -->*/
+
+
+/* revised version */
+
+div {
+    width: 30%;
+    /* padding: 30px; */
+    background: #0E91A1;
+    border: 5px solid #7DCE94;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    color: #005566;
+    height: 90px;
+    padding: 20px;
+    margin: 0px 0px 20px 0px;
+}
+
+body {
+    margin: 0px;
+}
