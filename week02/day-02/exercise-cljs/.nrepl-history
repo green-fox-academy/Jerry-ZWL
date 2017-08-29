@@ -1,0 +1,4 @@
+(start-repl)
+(js/alert "Hello, ClojureScript")
+:cljs/quit
+quit
