@@ -1,0 +1,15 @@
+'use strict';
+// - need to ask the real meaning of this question.
+// - Create a variable named `p1`
+//   with the following content: `[1, 2, 3]`
+// - Create a variable named `p2`
+//   with the following content: `[4, 5]`
+// - Log to the console if `p2` has more elements than `p1`
+var p1 = [1, 2, 3];
+var p2 = [4, 5, 6, 7];
+
+(function printer(p1, p2) {
+    if (p2.length > p1.length) {
+        console.log('p2 has more elements than p1');
+    }
+})(p1, p2);
