@@ -1,2 +1,2 @@
-# Jerry-ZWL-EPAM-JSA
+# Jerry-ZWL
 EPAM JavaScript Academy
