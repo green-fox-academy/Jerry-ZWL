@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Workshop: innerHTML, textContent</title>
+</head>
+
+<body>
+    <p class="apple">apple</p>
+    <p class="balloon">banana</p>
+    <p class="cat">car</p>
+    <p class="dog">dolphin</p>
+
+
+    <script>
+        var para = document.querySelectorAll('p');
+        var p = para[para.length - 1].textContent;
+        para.forEach((u, i, a) => {
+            return a[i].textContent = p;
+        })
+    </script>
+
+</body>
+
+</html>
