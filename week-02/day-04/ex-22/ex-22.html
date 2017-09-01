@@ -14,24 +14,23 @@
     <!-- You can work in the html or in a separate js file. Like:
   <script>
     Remove the king from the list.
-    Add 3 list items saying 'The Fox' to the list.
+    Add list items that have the following text contents:
+    ['apple', 'bubble', 'cat', 'green fox']
   </script>
   OR
-  <script src="createelement-2.js"></script> -->
-
+  <script src="createelement-3.js"></script> -->
     <script>
         var asteroidsList = document.querySelector('ul.asteroids');
         var listOfKing = document.querySelector('ul>li');
         asteroidsList.removeChild(listOfKing);
-        var newList1 = document.createElement('li');
-        newList1.textContent = "The Fox";
-        var newList2 = document.createElement('li');
-        newList2.textContent = "The Fox";
-        var newList3 = document.createElement('li');
-        newList3.textContent = "The Fox";
-        asteroidsList.appendChild(newList1);
-        asteroidsList.appendChild(newList2);
-        asteroidsList.appendChild(newList3);
+        ['apple', 'bubble', 'cat', 'green fox'].map(
+            (u, i) => {
+                var newAsteroid = [];
+                newAsteroid[i] = document.createElement('li');
+                newAsteroid[i].textContent = u;
+                asteroidsList.appendChild(newAsteroid[i]);
+            }
+        )
     </script>
 </body>
 
