@@ -1,0 +1,73 @@
+.rightArrow {
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    transform: rotate(180deg);
+    float: right;
+}
+
+.leftArrow {
+    float: left;
+}
+
+.frame::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.frame {
+    background: white;
+}
+
+.images {
+    width: 70%;
+    margin: 0px auto;
+    text-align: center;
+}
+
+.images img {
+    margin: auto;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+button {
+    width: 50px;
+    height: 600px;
+    background: url('../arrow.svg') no-repeat center;
+    border: 0 solid white;
+    outline: none;
+}
+
+.thumbnail {
+    min-width: 827px;
+    margin: 0 auto;
+}
+
+.thumb {
+    width: 80px;
+    height: 60px;
+    margin-right: 20px;
+    margin-left: 10px;
+    display: inline-block;
+    text-align: center;
+}
+
+
+/* hover stuff */
+
+a>span:nth-child(n) {
+    position: absolute;
+    top: 300px;
+}
+
+a>span:nth-child(2n) {
+    position: absolute;
+    top: 500px;
+}
+
+a:hover .pop {
+    visibility: visible;
+}
