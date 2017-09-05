@@ -7,7 +7,7 @@
 // If you press the "make candy rain" button, the candy generation should speed up 10x
 
 var candies = 1000;
-var lollypops = 10;
+var lollypops = 9;
 var generateTime = 1000;
 var lollyGe;
 var candiesCell = document.querySelector('.stats .candies');
@@ -21,7 +21,7 @@ var refresh = setInterval(renderTable, 10);
 function renderTable(params) {
     lollypopsToGe();
     candiesCell.textContent = candies;
-    lollypopsCell.textContent = lollypops == 0 ? '🍬 ' : '🍭 '.repeat(lollypops);
+    lollypopsCell.textContent = lollypops == 0 ? 'No 🍭 Left' : '🍭 '.repeat(lollypops);
     speedCell.textContent = candies * 1000 / (Date.now() - t0);
 }
 
@@ -46,10 +46,12 @@ buyLollypops.addEventListener('click', function() {
 
 candyMachine.addEventListener('click', function() {
     generateTime /= 10;
-    clearTimeout(lollyGe);
-    lollyGe = setInterval(function() {
-        return candies += 1;
-    }, generateTime);
+    if (lollyGe !== undefined) {
+        clearTimeout(lollyGe);
+        lollyGe = setInterval(function() {
+            return candies += 1;
+        }, generateTime);
+    }
 });
 
 function lollypopsToGe() {
