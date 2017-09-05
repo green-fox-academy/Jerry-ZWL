@@ -16,14 +16,12 @@ var speedCell = document.querySelector('.stats .speed');
 
 var t0 = Date.now();
 
-var refresh = setInterval(renderTable, 100);
+var refresh = setInterval(renderTable, 10);
 
 function renderTable(params) {
-    if (lollypops > 10) {
-        lollypopsToGe();
-    }
+    lollypopsToGe();
     candiesCell.textContent = candies;
-    lollypopsCell.textContent = '🍭 '.repeat(lollypops);
+    lollypopsCell.textContent = lollypops == 0 ? '🍬 ' : '🍭 '.repeat(lollypops);
     speedCell.textContent = candies * 1000 / (Date.now() - t0);
 }
 
@@ -47,13 +45,19 @@ buyLollypops.addEventListener('click', function() {
 });
 
 candyMachine.addEventListener('click', function() {
-    return generateTime /= 10;
-});
-
-function lollypopsToGe() {
+    generateTime /= 10;
     clearTimeout(lollyGe);
-    lollypops -= 10;
     lollyGe = setInterval(function() {
         return candies += 1;
     }, generateTime);
-};
+});
+
+function lollypopsToGe() {
+    if (lollypops >= 10) {
+        clearTimeout(lollyGe);
+        lollypops -= 10;
+        lollyGe = setInterval(function() {
+            return candies += 1;
+        }, generateTime);
+    }
+}
