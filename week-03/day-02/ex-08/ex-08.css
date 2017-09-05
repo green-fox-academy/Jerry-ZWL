@@ -1,0 +1,9 @@
+p {
+    display: block;
+    border: 0px solid white;
+    color: red;
+}
+
+button {
+    display: block;
+}
