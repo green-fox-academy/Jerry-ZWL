@@ -5,7 +5,7 @@ var EventEmitter = require('events').EventEmitter;
 filesEE = new EventEmitter();
 myFiles = [];
 size = {};
-var sizeObj = filesEE.on('files_ready', function() {
+filesEE.on('files_ready', function() {
     console.log(myFiles);
     size = myFiles.reduce((p, c) => {
         var obj = {};
@@ -14,9 +14,10 @@ var sizeObj = filesEE.on('files_ready', function() {
         obj.height = dimensions.height;
         return p = p.concat(obj);
     }, []);
-    console.log(size);
+    // console.log(size);
     return size;
 });
+
 //asyncros return {}, don't know why
 
 

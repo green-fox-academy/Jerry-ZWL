@@ -1,5 +1,5 @@
 // node.js can list the file names as a list 
-var imagesList = Array(7).fill(0).map((u, i) => { return u = i; })
+var imagesList = Array(8).fill(0).map((u, i) => { return u = i; })
 var descriptionData = [{
     width: 800,
     height: 500,
@@ -18,7 +18,7 @@ var descriptionData = [{
 }, {
     width: 1024,
     height: 800,
-    title: 'what',
+    title: 'young performer',
     description: 'In 1928, he published the first of dozens of acclaimed violin transcriptions. Many, including his arrangements of selections from Gershwin’s “Porgy and Bess,” are now part of the standard repertoire. Using the pseudonym Jim Hoyl, he even wrote a pop song that became a hit in 1946.'
 }, {
     width: 1024,
@@ -28,18 +28,18 @@ var descriptionData = [{
 }, {
     width: 1273,
     height: 944,
-    title: 'focus',
-    description: 'neck angle!'
+    title: 'play with light',
+    description: 'Heifetz’s public debut in Berlin took place four days later at the large hall of the Hochschule für Musik. A sold out audience packed the 1,600 seat hall. Fernow wrote to Auer that the recital was “a sensational success” and that “the public was wild with enthusiasm.”'
 }, {
     width: 1280,
     height: 720,
-    title: 'nap after lunch',
-    description: 'So comfortable!'
+    title: 'whole heart',
+    description: 'That recital stands as one of the most sensational debuts in musical history. The reviews in the many daily newspapers that then existed in New York were so rapturous in their praise that Heifetz’s manager simply reprinted them in their entirety in multi-page ads in the leading music magazines.'
 }, {
     width: 1920,
     height: 1080,
-    title: 'good night',
-    description: 'tomorrow is another day!'
+    title: 'later life',
+    description: 'In his later years, Heifetz became a dedicated teacher and a champion of causes he believed in. He led efforts to establish “911” as an emergency phone number, and crusaded for clean air. He and his students at the University of Southern California protested smog by wearing gas masks, and in 1967 he converted his Renault passenger car into an electric vehicle.'
 }]
 
 var classthumbnail = document.querySelector('div.thumbnail');
@@ -52,17 +52,10 @@ imagesList.map(
         newATag.setAttribute('href', '#' + i);
         newATag.setAttribute('id', 1);
         classthumbnail.appendChild(newATag);
-        var newSpanTagPop = document.createElement('span');
-        newSpanTagPop.classList.add('pop' + i);
-        newATag.appendChild(newSpanTagPop);
         var newImgTag = document.createElement('img');
         newImgTag.setAttribute('src', "resource/images/" + i + ".jpg");
         newImgTag.classList.add('thumb');
         newATag.appendChild(newImgTag);
-        var newSpanTagDes = document.createElement('span');
-        newSpanTagDes.classList.add('description' + i);
-        newATag.appendChild(newSpanTagDes);
-
     }
 )
 
@@ -83,18 +76,18 @@ allAtayToArray.map(
                 console.log('width', imageWidth, 'height', imageHeight)
                 image.setAttribute('height', imageHeight);
                 image.setAttribute('width', imageWidth);
+
+                u.setAttribute('discription', descriptionData[i].description);
             })
-        var popi = document.querySelector('.pop' + i);
         var descrpi = document.querySelector('.description' + i);
 
         u.onmouseover = function() {
-            u.style.padding = '2px 2px 4px 2px';
-            popi.textContent = descriptionData[i].title;
+            u.setAttribute('bubbletooltip', descriptionData[i].title);
             // descrpi.textContent = descriptionData[i].description;
         }
         u.onmouseout = function() {
             u.style.border = '';
-            popi.textContent = '';
+            u.removeAttribute('bubbletooltip');
             // descrpi.textContent = '';
         }
     }
