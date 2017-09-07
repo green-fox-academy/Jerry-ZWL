@@ -86,7 +86,7 @@ a[bubbletooltip]:before {
     border-left: 22px solid transparent;
     border-right: 22px solid transparent;
     visibility: hidden;
-    top: -26px;
+    top: -44px;
     left: 19px;
 }
 
@@ -101,7 +101,7 @@ a[bubbletooltip]:after {
     display: block;
     font-size: 12px;
     font-family: Arial, Helvetica, sans-serif;
-    top: -36px;
+    top: -58px;
     left: -28%;
     white-space: nowrap;
     background: #0b1129;
@@ -124,28 +124,21 @@ a[bubbletooltip]:hover:after {
 /* discription
  */
 
-a[discription]:focus:after,
-a[discription]:focus:before {
-    bottom: 100%;
-    left: 50%;
-    border: solid transparent;
-    content: " ";
-    height: 0;
-    width: 0;
+
+/* put it in div click function will be beter?*/
+
+div[discription]:before {
+    content: "";
     position: absolute;
-    pointer-events: none;
+    border-bottom: 12px solid #737572;
+    border-left: 12px solid transparent;
+    border-right: 12px solid transparent;
+    visibility: visible;
+    top: -12px;
+    left: 28px;
 }
 
-a[discription]:focus:after {
-    border-color: rgba(234, 233, 233, 0);
-    border-bottom-color: #EAE9E9;
-    border-width: 30px;
-    margin-left: -30px;
-}
 
-a[discription]:focus:before {
-    border-color: rgba(234, 233, 233, 0);
-    border-bottom-color: #EAE9E9;
-    border-width: 36px;
-    margin-left: -36px;
-}
+/* div[discription]:focus::before {
+    visibility: visible;
+} */

@@ -52,10 +52,13 @@ imagesList.map(
         newATag.setAttribute('href', '#' + i);
         newATag.setAttribute('id', 1);
         classthumbnail.appendChild(newATag);
+        var newImgTagContainer = document.createElement('div');
+        newImgTagContainer.classList.add('thumbContainer');
         var newImgTag = document.createElement('img');
         newImgTag.setAttribute('src', "resource/images/" + i + ".jpg");
         newImgTag.classList.add('thumb');
-        newATag.appendChild(newImgTag);
+        newATag.appendChild(newImgTagContainer);
+        newImgTagContainer.appendChild(newImgTag);
     }
 )
 
@@ -65,6 +68,9 @@ imagesList.map(
 var allAtag = document.querySelectorAll('a');
 var imageWidth, imageHeight;
 let allAtayToArray = Array.from(allAtag);
+var allThumbTag = document.querySelectorAll('.thumbContainer');
+let allThumbTagArray = Array.from(allThumbTag);
+console.log(allThumbTagArray);
 allAtayToArray.map(
     (u, i) => {
         u.addEventListener('click',
@@ -77,8 +83,8 @@ allAtayToArray.map(
                 image.setAttribute('height', imageHeight);
                 image.setAttribute('width', imageWidth);
 
-                u.setAttribute('discription', descriptionData[i].description);
-            })
+                allThumbTagArray[i].setAttribute('discription', descriptionData[i].description);
+            });
         var descrpi = document.querySelector('.description' + i);
 
         u.onmouseover = function() {
