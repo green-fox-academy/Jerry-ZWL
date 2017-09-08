@@ -1,0 +1,175 @@
+body {
+    margin: 0;
+}
+
+nav {
+    border: width border-style color;
+    border-bottom: 2px solid #75A6D5;
+    background: #F0F0F0;
+}
+
+a {
+    list-style: decimal;
+    list-style-position: inside;
+    display: inline;
+    font-size: 10px;
+    margin: 0px 20px 0px 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+ol {
+    list-style-type: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+li {
+    font-size: 16px;
+    display: block;
+}
+
+.orderContainer {
+    display: inline-block;
+    width: 36px;
+}
+
+.order {
+    color: #B7B7B7;
+    font-size: 20px;
+    padding-right: 14px;
+    padding-bottom: 17px;
+    display: table;
+}
+
+.arrows {
+    display: inline-block;
+    width: 36px;
+}
+
+.down {
+    display: block;
+    border: 0px;
+    height: 20px;
+    width: 20px;
+    background: transparent;
+    background-repeat: no-repeat;
+    background-image: url('../resource/arrows/downvote.png');
+}
+
+.down.downVoted {
+    background-image: url('../resource/arrows/downvoted.png');
+}
+
+.score {
+    color: #B7B7B7;
+    font-size: 18px;
+    text-align: center;
+}
+
+.up {
+    display: block;
+    border: 0px;
+    width: 20px;
+    height: 20px;
+    background: transparent;
+    background-repeat: no-repeat;
+    background-image: url('../resource/arrows/upvote.png');
+}
+
+.up.upVoted {
+    background-image: url('../resource/arrows/upvoted.png');
+}
+
+.info {
+    display: inline-block;
+}
+
+.info p {
+    color: #B7B7B7;
+}
+
+.info .title {
+    display: inline;
+    color: #0366D6;
+}
+
+.timeStamp {
+    margin: 0px;
+    font-size: 10px;
+}
+
+.modify,
+.remove {
+    display: inline;
+    color: #B7B7B7;
+    font-size: 10px;
+    font-weight: 900;
+}
+
+
+/* submit css */
+
+.submit {
+    padding-left: 10px;
+}
+
+.submitHeader {
+    width: 40%;
+    font-weight: bolder;
+    border-bottom: 4px solid #0366D6;
+    padding-bottom: 20px;
+    font-size: 20px;
+}
+
+.thePage {
+    color: #0366D6;
+}
+
+.urlBlock {
+    padding: 20px;
+    background: #CEE3F8;
+    font-weight: bolder;
+    display: block;
+    width: 40%;
+    box-sizing: border-box;
+}
+
+#url {
+    display: block;
+    width: 95%;
+    height: 20px;
+}
+
+.titleBlock {
+    padding: 20px;
+    background: #CEE3F8;
+    font-weight: bolder;
+    display: block;
+    width: 40%;
+    box-sizing: border-box;
+}
+
+.redStar {
+    color: red;
+}
+
+#title {
+    display: block;
+    width: 95%;
+    height: 60px;
+}
+
+.optionBlock {
+    padding: 20px;
+    background: #CEE3F8;
+    display: block;
+    width: 40%;
+    box-sizing: border-box;
+}
+
+.optionBlock label {
+    font-size: border;
+}
+
+#options {
+    font-weight: normal;
+}

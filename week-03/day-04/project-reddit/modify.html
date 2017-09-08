@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Reddit</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <nav>
+        <a class="main">MAIN</a>
+        <a class="create">CREATE NEW POST</a>
+    </nav>
+
+    <div class="modify">
+
+        <p class="urlBlock"><label for="url">url</label>
+            <input type="text" id="url"></p>
+
+        <p class="titleBlock"><label for="title"><span class="redStar">*</span>title</label>
+            <input type="text" id="title"></p>
+
+
+        <input value="modify" type="submit" onclick="modify()">
+    </div>
+
+    <script src="./javascript/modify.js"></script>
+</body>
+
+</html>
