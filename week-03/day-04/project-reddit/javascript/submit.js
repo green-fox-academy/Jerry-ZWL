@@ -31,10 +31,10 @@ function submitPost() {
     url = document.getElementById('url').value;
     title = document.getElementById('title').value;
     options = document.getElementById('options').value;
-    url !== undefined ? url = url : url = '';
+    url !== undefined ? url = url : url = ''; //# 
     console.log('url', url);
     console.log('title', title);
-    if (title == null || title == undefined || title == '') {
+    if (title === null || title === undefined || title === '') {
         alert('title can not be emptyl!');
     } else {
         var postObj = {

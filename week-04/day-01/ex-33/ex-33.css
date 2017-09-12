@@ -1,0 +1,23 @@
+body {
+    margin: 0px;
+}
+
+.container {
+    display: flex;
+    flex-flow: row, nowrap;
+    width: 100%;
+    background: yellow;
+    height: 300px;
+    list-style: none;
+    align-items: center;
+    padding: 0;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.item {
+    width: 100px;
+    height: 100px;
+    background: purple;
+    margin: 0px 0px 0px 6px;
+}

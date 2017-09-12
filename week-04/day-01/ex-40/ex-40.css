@@ -1,0 +1,61 @@
+body {
+    margin: 0px;
+}
+
+.container {
+    display: flex;
+    flex: column;
+    width: 800px;
+    flex-wrap: wrap;
+}
+
+.nav {
+    background: purple;
+    display: flex;
+    flex: row;
+    justify-content: flex-start;
+    width: 100%;
+    height: 60px;
+    align-items: center;
+}
+
+.li {
+    background: skyblue;
+    list-style: none;
+    height: 30px;
+}
+
+.item1 {
+    flex: 0 0 200px;
+    margin: 0px 5px 0px 10px;
+}
+
+.item2 {
+    flex: 0 0 100px;
+    margin: 0px 5px 0px 5px;
+}
+
+.item3 {
+    flex: 0 0 100px;
+    margin: 0px 5px 0px 5px;
+}
+
+.content {
+    display: flex;
+    flex: row;
+    justify-content: center;
+    width: 100%;
+    height: 400px;
+}
+
+.left {
+    background: yellow;
+    flex: 2;
+    height: 100%;
+}
+
+.right {
+    background: green;
+    flex: 1;
+    height: 100%;
+}

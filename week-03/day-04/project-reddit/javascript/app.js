@@ -13,6 +13,7 @@ var data, id, upScore, downScore;
 var postsLength = 0;
 
 
+
 //tags
 var container = document.querySelector('.container');
 var submit = document.querySelector('.submit');
@@ -51,14 +52,15 @@ function redirectToSubmitPage() {
 
 
 //functions
-function messageRequester(url, method, doFuntion, option, setHeader) {
+//payload
+function messageRequester(url, method, doFuntion, option, setHeader, opts) {
     console.log(url);
     var xhr = new XMLHttpRequest();
     xhr.onreadystatechange = function() {
         if (xhr.readyState == XMLHttpRequest.DONE) {
             if (xhr.status === 200) {
                 if (doFuntion !== undefined) {
-                    doFuntion(xhr);
+                    doFuntion(xhr, opts);
                 }
             } else {
                 console.log('error', xhr.statusText);
@@ -67,13 +69,13 @@ function messageRequester(url, method, doFuntion, option, setHeader) {
     };
     xhr.open(method, url);
     xhr.setRequestHeader('Content-Type', 'application/json');
-    if (setHeader !== undefined) {
+    if (!!setHeader) {
         setHeader();
     }
+    console.log('sending', 'opts', opts);
     xhr.send(option);
+
 }
-
-
 
 function initPage(xhr) {
     data = JSON.parse(xhr.response);
@@ -90,7 +92,8 @@ function initPage(xhr) {
 
 
 
-
+//elementType
+//data-anythign 
 function creatTags(tagType, parentTag, className) {
     let tagNmae = document.createElement(tagType);
     if (className !== undefined) { tagNmae.className = className; }
@@ -179,30 +182,51 @@ var deletetCallback = function(remove, liTag) {
 
 
 
+// var upCallback = function(up, score, down) {
+//     return function() {
+//         id = up.getAttribute('useId');
+//         var url = baseUrl + putUpUrl();
+//         console.log('url', url);
+//         var xhr = new XMLHttpRequest();
+//         xhr.onreadystatechange = function() {
+//             if (xhr.readyState == XMLHttpRequest.DONE) {
+//                 if (xhr.status === 200) {
+//                     var data = JSON.parse(xhr.response);
+//                     console.log('logResponse', data);
+//                     score.textContent = data.score;
+//                     up.classList.add("upVoted");
+//                     down.classList.remove('downVoted');
+//                 } else {
+//                     console.log('error', xhr.statusText);
+//                 }
+//             }
+//         };
+//         xhr.open('PUT', url);
+//         xhr.setRequestHeader('Content-Type', 'application/json');
+//         xhr.send(null);
+//     };
+// };
+
 var upCallback = function(up, score, down) {
     return function() {
         id = up.getAttribute('useId');
         var url = baseUrl + putUpUrl();
         console.log('url', url);
-        var xhr = new XMLHttpRequest();
-        xhr.onreadystatechange = function() {
-            if (xhr.readyState == XMLHttpRequest.DONE) {
-                if (xhr.status === 200) {
-                    var data = JSON.parse(xhr.response);
-                    console.log('logResponse', data);
-                    score.textContent = data.score;
-                    up.classList.add("upVoted");
-                    down.classList.remove('downVoted');
-                } else {
-                    console.log('error', xhr.statusText);
-                }
-            }
-        };
-        xhr.open('PUT', url);
-        xhr.setRequestHeader('Content-Type', 'application/json');
-        xhr.send(null);
+        var optsList = [];
+        optsList.push(up, score, down);
+        messageRequester(url, 'PUT', updoFuntion, null, null, optsList);
     };
 };
+
+function updoFuntion(xhr, opts) {
+    if (opts.length == 3) {
+        var data = JSON.parse(xhr.response);
+        console.log('logResponse', data);
+        opts[1].textContent = data.score;
+        opts[0].classList.add("upVoted");
+        opts[2].classList.remove('downVoted');
+    }
+}
 
 
 var downCallback = function(down, score, up) {
