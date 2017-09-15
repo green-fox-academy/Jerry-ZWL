@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Reddit</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <nav>
+        <a class="main">MAIN</a>
+        <a class="create">CREATE NEW POST</a>
+    </nav>
+
+    <div class="submit">
+        <p class="submitHeader">submit to <span class="thePage">the page</span></p>
+
+        <p class="urlBlock"><label for="url">url</label>
+            <input type="text" id="url"></p>
+
+        <p class="titleBlock"><label for="title"><span class="redStar">*</span>title</label>
+            <input type="text" id="title"></p>
+
+        <p class="optionBlock"><label for="options">options</label>
+            <input type="checkbox" id="options" name='checkAno' value='anonymous'>post as anonymous</p>
+
+        <input value="Submit" type="submit" onclick="submitPost()">
+    </div>
+
+    <script src="./javascript/submit.js"></script>
+</body>
+
+</html>

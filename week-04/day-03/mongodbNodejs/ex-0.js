@@ -10,5 +10,6 @@ MongoClient.connect(url, function(err, db) {
         console.log('Unable to connect to the MongoDB server. Error:', err);
     }
     console.log('Connection established to ' + url);
+    console.log("Current database", db.databaseName);
     db.close();
 });

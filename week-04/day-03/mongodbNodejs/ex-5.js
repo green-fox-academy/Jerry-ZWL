@@ -82,7 +82,7 @@ function dbQuery(queryTerms, res) {
     MongoClient.connect(url, function(err, db) {
         db.collection('students').find(queryTerms[0], queryTerms[1]).toArray(function(err, docs) {
             var result = { "students": docs };
-            console.log(JSON.stringify(result));
+            console.log("result", JSON.stringify(result));
             res.send(JSON.stringify(result));
         });
         db.close();
