@@ -1,0 +1,51 @@
+$font-stack: Helvetica, sans-serif;
+$primary-color: #333;
+@import 'partial';
+@import 'operators';
+$colorFul :#1FC0C0;
+body {
+  font: 100% $font-stack;
+  color: $color;
+}
+
+aside{
+  ul{
+    margin: 0;
+  }
+  li{
+    color: $colorFul;
+  }
+}
+
+
+@mixin img-border($border-width){
+  border-width: $border-width;
+  @content
+}
+
+
+.spotify{
+  @include img-border(5px){
+     border-style: solid;
+     border-color: blue;
+     lighting-color: red;
+  }
+}
+
+.push-button{
+  background-color: blue;
+  color: silver;
+}
+
+.main-button{
+  @extend .push-button;
+  font-weight: bold;
+  color: black;
+  &:focus{
+    color: red;
+  }
+
+}
+
+
+

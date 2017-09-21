@@ -71,7 +71,9 @@ app.get('/posts', function(req, res) {
 
 function dbQuery(queryTerms, res, collectionName, josnFormat) {
     MongoClient.connect(url, function(err, db) {
-        db.collection('posts').find(queryTerms[0], queryTerms[1]).sort({ 'score': -1 }).toArray(function(err, docs) {
+        db.collection('posts').find(queryTerms[0], queryTerms[1]).
+        sort({ 'score': -1 }).
+        toArray(function(err, docs) {
             var result = josnFormat(docs);
             console.log("result", JSON.stringify(result));
             res.send(JSON.stringify(result));
@@ -82,7 +84,9 @@ function dbQuery(queryTerms, res, collectionName, josnFormat) {
 
 function dbQueryForCache(queryTerms, collectionName, josnFormat, cacheFun) {
     MongoClient.connect(url, function(err, db) {
-        db.collection('posts').find(queryTerms[0], queryTerms[1]).sort({ 'score': -1 }).toArray(function(err, docs) {
+        db.collection('posts').find(queryTerms[0], queryTerms[1]).
+        sort({ 'score': -1 }).
+        toArray(function(err, docs) {
             var result = josnFormat(docs);
             console.log("result", JSON.stringify(result));
             cacheFun(result);
