@@ -1,0 +1,68 @@
+$backgroundColor: #62B57D;
+$fontsize : 26px;
+body{
+    background:white;
+    margin: 0;
+    font-family: 'Work Sans', sans-serif;
+  }
+
+header{
+    background: #2E5580;
+    height: 50px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    
+
+    a{
+        text-decoration: none;
+        display: inline-flex;
+        margin: 5px;
+        background: #FFFD54;
+        color: #4B22D5;
+    }
+}
+
+.first-row{
+    display: flex;
+    font-size: $fontsize;
+    margin-top: 20px;
+    justify-content: space-between;
+}
+
+.titles{
+    display: flex;
+    
+    margin-top: 20px;
+    justify-content: space-between;
+
+
+    div{
+        font-size: $fontsize;
+        text-decoration: none;
+        display: inline-block;
+        flex-basis: auto;
+        background: #FFFD54;
+        color: black;
+    }
+}
+
+
+
+
+  #todo-wrapper{
+    width: 100%;
+    margin: 0 auto;
+    background: $backgroundColor;
+    color: #333;
+  }
+  
+  #todo-wrapper p{
+    color: #777;
+    font-style: italic;
+  }
+  
+  #todo-list ul{
+    list-style-type: none;
+    padding: 0;
+  }

@@ -1,0 +1,35 @@
+$fontsize : 26px;
+$backgroundColor: #62B57D;
+#search-bar{
+    display: flex;
+    font-size: $fontsize;
+      input::placeholder {
+          font-size: $fontsize;
+      }
+
+      input[type="text"]{
+        flex-basis: 50%;
+        flex-grow: 4;
+        padding: 4px;
+        border: 0;
+        font-size: $fontsize;
+        border-bottom: 2px solid black;
+        color: #777;
+        background-color: $backgroundColor;
+    }
+
+    input[type="submit"]{
+        flex-basis: 10%;
+        flex-grow: 1;
+        padding: 3px;
+        background: $backgroundColor;
+        border-radius: 0 4px 4px 0;
+        border: 1px solid gray;
+        color:black;
+        cursor: pointer;
+        font-family: $fontsize;
+        font-size: $fontsize;
+    }
+  }
+  
+ 
